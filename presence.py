@@ -1,13 +1,13 @@
 from pypresence import Presence
 import time
 
-client_id = "819380421040144394"  # Enter your Application ID here.
+client_id = "819380421040144394"  # you can use this client id from the discord developer portal or get one yourself by making a new application!
 RPC = Presence(client_id=client_id)
 RPC.connect()
 
 #print(RPC.update(state="referal code:", details="currently Chopping"))  # Set the presence
-print(RPC.update(buttons=[{"label": "Get Salad!", "url": "https://www.salad.io"}])) # Can specify up to 2 buttons
-RPC.update(details="🔪 Currently Chopping", state="😀 Referal code: 5H9AJ2",  large_image='1024', small_image='discord.png', large_text='SALAD.IO', small_text='text here')
+#print(RPC.update(buttons=[{"label": "Get Salad!", "url": "https://www.salad.io"}])) # Can specify up to 2 buttons
+RPC.update(details="🔪 Currently: Chopping", state="😀 Referal Code: 5H9AJ2", buttons=[{"label": "Get Salad!", "url": "https://www.salad.io"}], large_image='1024', small_image='512', large_text='The Gamers Crypto Miner', small_text='Use Code 5H9AJ2 For 2X Mining Rates!!')
 
 
 
