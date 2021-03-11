@@ -1,11 +1,14 @@
 from pypresence import Presence
 import time
 
-client_id = 'your client ID'  # Fake ID, put your real one here
-RPC = Presence(client_id)  # Initialize the client class
-RPC.connect() # Start the handshake loop
+client_id = "819380421040144394"  # Enter your Application ID here.
+RPC = Presence(client_id=client_id)
+RPC.connect()
 
-print(RPC.update(state="use code: 5H9AJ2 for 2X rewards! ", details="the gamers crypto miner!"))  # Set the presence
+print(RPC.update(state="referal code:", details="currently Chopping"))  # Set the presence
+print(RPC.update(buttons=[{"label": "Get Salad!", "url": "https://www.salad.io"}])) # Can specify up to 2 buttons
 
-while True:  # The presence will stay on as long as the program is running
-    time.sleep(15) # Can only update rich presence every 15 seconds
+
+while 1:
+    time.sleep(15) #Can only update presence every 15 seconds
+    
