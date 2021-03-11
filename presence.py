@@ -7,6 +7,5 @@ RPC.connect()
 
 RPC.update(details="🔪 Currently: Chopping", state="😀 Referal Code: 5H9AJ2", buttons=[{"label": "Get Salad!", "url": "https://salad.io"}], large_image='1024', small_image='512', large_text='The Gamers Crypto Miner', small_text='Use Code 5H9AJ2 For 2X Mining Rates!!')
 
-
 while 1:
     time.sleep(15) #Can only update presence every 15 seconds
