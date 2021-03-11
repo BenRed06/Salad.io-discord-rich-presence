@@ -1,13 +1,14 @@
 from pypresence import Presence
 import time
 
-client_id = "819380421040144394"  # Enter your Application ID here.
+client_id = "your clients ID"  # Enter your Application ID here.
 RPC = Presence(client_id=client_id)
 RPC.connect()
 
-print(RPC.update(state="referal code:", details="currently Chopping"))  # Set the presence
+#print(RPC.update(state="referal code:", details="currently Chopping"))  # Set the presence
 print(RPC.update(buttons=[{"label": "Get Salad!", "url": "https://www.salad.io"}])) # Can specify up to 2 buttons
 
+RPC.update(details="🔪 Currently Chopping", state="😀 Referal code: 5H9AJ2",  large_image='imagename', small_image='discord.png', large_text='Salad.io', small_text='text here', start=time.time())
 
 while 1:
     time.sleep(15) #Can only update presence every 15 seconds
