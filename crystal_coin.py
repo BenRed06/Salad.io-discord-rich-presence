@@ -1,1 +1,11 @@
+from pypresence import Presence
+import time
 
+client_id = "819380421040144394"  # you can use this client id from the discord developer portal or get one yourself by making a new application!
+RPC = Presence(client_id=client_id)
+RPC.connect()
+
+RPC.update(details="Crystal Coin", state="A new POW cryprocurrency!", buttons=[{"label": "Get Salad!", "url": "https://salad.io"}], large_image='1024', small_image='512', large_text='The Gamers Crypto Miner', small_text='Use Code 5H9AJ2 For 2X Mining Rates!!')
+
+while 1:
+    time.sleep(15) #Can only update presence every 15 seconds
